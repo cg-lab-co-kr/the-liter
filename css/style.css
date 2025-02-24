@@ -199,16 +199,8 @@
 }
 
 @media (max-width: 880px) {
-  .reward-item {
-    flex-direction: column;
-  }
-
   .reward-txt br {
     display: none;
-  }
-
-  .reward .sec-title {
-    margin-top: 20.4167vw;
   }
 }
 

@@ -27,12 +27,12 @@ const $mobileGnb = $(".mobile-gnb > li > a");
 
 $btnMenu.on("click", function () {
   $mobileMenu.addClass("on");
-  $("body").css("overflow", "hidden"); // 스크롤 방지
+  $("body").css("overflow", "hidden");
 });
 
 $btnClose.on("click", function () {
   $mobileMenu.removeClass("on");
-  $("body").css("overflow", "auto"); // 스크롤 복구
+  $("body").css("overflow", "auto");
 });
 
 // 모바일 서브메뉴 토글
@@ -50,7 +50,7 @@ $(document).on("click", function (e) {
   }
 });
 
-// 비주얼 이미지 나타나기~
+// 비주얼 이미지 나타나기
 gsap.registerPlugin(ScrollTrigger);
 
 const mainPic = $(".main-pic");
@@ -73,21 +73,6 @@ visualTl.from(visualPic, { scale: 3, filter: "blur(30px)", duration: 2 });
 visualTl.from(".bread", { y: 50, autoAlpha: 0 }, "-=0.9");
 visualTl.from(".visual-title h2", { y: 100, autoAlpha: 0 }, "-=0.6");
 visualTl.from(".visual-title p", { y: 100, autoAlpha: 0 }, "-=0.6");
-
-/* MENU!!!---------------------------------------------- */
-
-const $menuItem = $(".menu-list li");
-const $menuList = $(".menu-list");
-
-$menuItem.on("click", function () {
-  $(menuList).toggleClass("on");
-
-  $(menuList).siblings().find($menuItem).stop().slideUp(duration);
-
-  // $(this).find($answer).slideDown(duration);
-  // 선택한 놈의 자손중 답변을 찾아서 슬라이드 토글
-  $(menuList).find($menuItem).stop().slideToggle(duration);
-});
 
 /* MAP!!!---------------------------------------------- */
 

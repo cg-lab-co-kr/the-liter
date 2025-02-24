@@ -171,21 +171,6 @@ body {
   margin-left: 1rem;
 }
 
-.btn-talk {
-  position: fixed;
-  bottom: 28.5rem;
-  right: 5.7292vw;
-  width: 5.4rem;
-  aspect-ratio: 1/1;
-  background: var(--main-color) url(../img/ico-talk.svg) no-repeat 50% / 50%;
-  border-radius: 50%;
-  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.25);
-
-  opacity: 0;
-  transition: 0.4s ease;
-  z-index: 1;
-}
-
 .btn-top {
   position: fixed;
   bottom: 20.7rem;
@@ -201,63 +186,9 @@ body {
   z-index: 1;
 }
 
-.btn-talk.active {
-  opacity: 1;
-  bottom: 30.5rem;
-}
-
 .btn-top.active {
   opacity: 1;
   bottom: 22.7rem;
-}
-
-.tab-con {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 9.6rem;
-}
-
-.tab-item {
-  display: flex;
-  gap: 2rem;
-}
-
-.tab-item li a {
-  display: block;
-  /* width: 20.3rem; */
-  /* width: 15.3788%; */
-  width: 10.5729vw;
-  min-width: 14.4rem;
-  max-width: 20.3rem;
-  /* height: 5.5rem; */
-  aspect-ratio: 1/0.2709;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--main-color);
-  border-radius: 5px;
-}
-
-.tab-item li a.on {
-  background: var(--main-color);
-  transition: 0.4s;
-  border-radius: 5px;
-}
-.tab-item li:hover {
-  background: var(--main-color);
-  transition: 0.4s;
-  border-radius: 5px;
-}
-
-.tab-item li a.on {
-  color: var(--white100);
-  transition: 0.4s;
-}
-.tab-item li:hover a {
-  color: var(--white100);
-  transition: 0.4s;
 }
 
 header {
@@ -672,27 +603,6 @@ footer {
     left: 18%;
   }
 
-  .foot-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn-family {
-    margin-top: 3rem;
-    padding: 1rem 0 2rem 0;
-    width: 100vw;
-    border-top: 1px solid var(--black20);
-    border-bottom: 1px solid var(--black20);
-  }
-
-  .foot-list::before {
-    width: 122vw;
-  }
-
-  .foot-list::after {
-    display: none;
-  }
-
   .accredit {
     margin-top: 5rem;
   }
@@ -737,27 +647,6 @@ footer {
 
   .sec-title p {
     width: 80%;
-  }
-
-  .foot-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn-family {
-    margin-top: 3rem;
-    padding: 1rem 0 2rem 0;
-    width: 100vw;
-    border-top: 1px solid var(--black20);
-    border-bottom: 1px solid var(--black20);
-  }
-
-  .foot-list::before {
-    width: 122vw;
-  }
-
-  .foot-list::after {
-    display: none;
   }
 
   .foot-con {
