@@ -76,39 +76,6 @@ visualTl.from(".visual-title p", { y: 100, autoAlpha: 0 }, "-=0.6");
 
 /* MENU!!!---------------------------------------------- */
 
-// menu-tab(MENU)
-const $menuTabMenu = $(".menu-tab > li");
-const $menuTabCon = $(".menu-con");
-
-menuTabAction(0);
-
-$menuTabMenu.on("click", function (e) {
-  e.preventDefault();
-
-  const menuTabIdx = $(this).index();
-  console.log(menuTabIdx);
-
-  menuTabAction(menuTabIdx);
-});
-
-// 공통의 동작을 함수로 정의
-function menuTabAction(index) {
-  // 탭메뉴 활성화
-  $menuTabMenu.removeClass("on");
-  $menuTabMenu.eq(index).addClass("on");
-
-  // 인덱스에 해당하는 $tabCon 보이기
-  $menuTabCon.hide();
-  $menuTabCon.eq(index).show();
-}
-
-if ($(".menu-list li")) {
-  const $menuList = $(".menu-list");
-  $menuList.on("click", function () {
-    $(this).toggleClass("on", 400);
-  });
-}
-
 const $menuItem = $(".menu-list li");
 const $menuList = $(".menu-list");
 

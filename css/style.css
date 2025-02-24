@@ -38,16 +38,16 @@
 }
 
 .vip-service li:nth-child(1) {
-  background-image: url(https://themedicube.co.kr/web/upload/event/ebottle_s1.png);
+  background-image: url(https://the-liter.com/files/attach/images/14395/21df519ea398e2cfd657a73879de3608.png);
 }
 .vip-service li:nth-child(2) {
-  background-image: url(https://themedicube.co.kr/web/upload/event/ebottle_s2.png);
+  background-image: url(https://the-liter.com/files/attach/images/14395/8a4340196101a457812a6a85168425ab.png);
 }
 .vip-service li:nth-child(3) {
-  background-image: url(https://themedicube.co.kr/web/upload/event/ebottle_s3.png);
+  background-image: url(https://the-liter.com/files/attach/images/14395/5a5476bd9fd8a898e4731bf846a4c55f.png);
 }
 .vip-service li:nth-child(4) {
-  background-image: url(https://themedicube.co.kr/web/upload/event/ebottle_img_21.png);
+  background-image: url(https://the-liter.com/files/attach/images/14395/4ef5f1c689350bf3dfbc9ff12acbcebf.png);
 }
 
 .vip-service li::after {
@@ -58,40 +58,24 @@
   width: 100%;
   height: 100%;
   transition: 0.4s;
-  background: var(--black10);
 }
 
 .vip-service li:hover::after {
   content: "";
-  background: var(--main-color);
+  background: var(--main-color50);
 }
 
-.vip-service dl {
-  position: relative;
-  z-index: 1;
-}
-
-.vip-service dt {
+.vip-service p {
   font-size: 3rem;
   font-weight: 700;
   color: var(--white100);
-  transform: translateY(110%);
+  transform: translateY(500%);
   transition: 0.5s;
+  z-index: 1;
 }
 
-.vip-service li:hover dt {
+.vip-service li:hover p {
   color: var(--white100);
-  transform: translateY(0);
-}
-
-.vip-service dd {
-  margin-top: 2.3rem;
-  transform: translateY(350%);
-  color: var(--white70);
-  transition: 0.5s;
-}
-
-.vip-service li:hover dd {
   transform: translateY(0);
 }
 
@@ -159,9 +143,9 @@
 }
 
 .app-pic {
-  width: 30.2083vw;
-  min-width: 34.5rem;
-  aspect-ratio: 1/0.931;
+  width: 53.0208vw;
+  min-width: 58rem;
+  aspect-ratio: 1/0.5305;
   overflow: hidden;
 }
 
@@ -200,6 +184,18 @@
   .vip-service {
     gap: 5rem;
   }
+
+  .app-download {
+    margin: 12rem 0;
+  }
+
+  .app-txt br {
+    display: none;
+  }
+
+  .app-pic {
+    display: none;
+  }
 }
 
 @media (max-width: 880px) {
@@ -208,14 +204,6 @@
   }
 
   .reward-txt br {
-    display: none;
-  }
-
-  .app-download {
-    margin: 12rem 0;
-  }
-
-  .app-pic {
     display: none;
   }
 

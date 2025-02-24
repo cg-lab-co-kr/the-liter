@@ -24,49 +24,6 @@
   margin-top: 6%;
 }
 
-.menu-tab {
-  display: flex;
-  /* gap: 2.5rem; */
-  gap: 1.8939%;
-  justify-content: center;
-  margin-top: 6.5rem;
-  flex-shrink: 0;
-  overflow: auto;
-}
-
-.menu-tab li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 11rem;
-  min-width: 9.6rem;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-
-  border: 2px solid var(--main-color);
-}
-
-.menu-tab li.on {
-  background: var(--main-color);
-}
-
-.menu-tab li.on a {
-  color: var(--white100);
-}
-
-.menu-tab li:hover {
-  background: #ffc8d5;
-  transition: 0.3s;
-  color: var(--main-color);
-  border: 2px solid var(--main-color);
-}
-
-.menu-tab a {
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: var(--main-color);
-}
-
 .menu-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(27.5rem, 1fr));
@@ -95,17 +52,6 @@
   color: var(--title-color);
   word-break: keep-all;
   text-align: center;
-}
-
-.menu-list .products-tag {
-  display: flex;
-  justify-content: center;
-}
-
-.menu-list .products-tag p {
-  font-weight: 500;
-  font-size: 1.6rem;
-  color: var(--main-color);
 }
 
 @media (max-width: 1440px) {
