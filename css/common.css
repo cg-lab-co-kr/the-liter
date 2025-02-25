@@ -571,11 +571,6 @@ footer {
   .inner {
     width: 82.4219%;
   }
-
-  .foot-list::before,
-  .foot-list::after {
-    transform: translateX(-9%);
-  }
 }
 
 @media (max-width: 1440px) {
