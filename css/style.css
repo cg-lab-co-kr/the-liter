@@ -169,11 +169,11 @@
 }
 
 .app-store a::after {
-  background-image: url(../img/store-ico1.png);
+  background-image: url(../img/arrow-w-right.png);
 }
 
 .app-store a:hover::after {
-  background-image: url(../img/store-ico1-m.png);
+  background-image: url(../img/arrow-m-right.png);
 }
 
 @media (max-width: 1220px) {
